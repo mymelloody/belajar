@@ -1,0 +1,169 @@
+/* ================= RESET ================= */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* ================= BODY ================= */
+body {
+    font-family: 'Segoe UI', sans-serif;
+    min-height: 100vh;
+    background: #f5f7fb;
+}
+
+/* ================= SIDEBAR ================= */
+.sidebar {
+    width: 260px;
+    position: fixed;
+    height: 100vh;
+    background: linear-gradient(135deg, #5eb5ee, #b8e1ff);
+    padding: 25px 20px;
+    box-shadow: 4px 0 15px rgba(0,0,0,0.05);
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar img {
+    display: block;
+    margin: 0 auto 10px;
+    border-radius: 10px;
+}
+
+.sidebar h3 {
+    color: #00324d;
+    text-align: center;
+    margin-bottom: 25px;
+    font-weight: 700;
+}
+
+/* ================= MENU ================= */
+.sidebar .nav {
+    flex: 1;
+}
+
+.nav-link {
+    color: #00324d;
+    margin-bottom: 8px;
+    padding: 10px 15px;
+    border-radius: 10px;
+    transition: .3s;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.nav-link:hover {
+    background: rgba(255,255,255,0.6);
+    color: #00324d;
+}
+
+.nav-link.active {
+    background: #5eb5ee;
+    color: #fff !important;
+    font-weight: 600;
+}
+
+/* ================= LOGOUT ================= */
+.nav-link.text-danger:hover {
+    background: #ffeaea;
+    color: #dc3545 !important;
+}
+
+/* ================= MAIN CONTENT ================= */
+.main-content {
+    margin-left: 260px;
+    padding: 40px;
+}
+
+/* ================= CARD ================= */
+.card {
+    border-radius: 18px;
+    border: none;
+}
+
+.card-stat h2 {
+    font-size: 28px;
+}
+
+.card-stat h5 {
+    font-size: 14px;
+}
+
+/* ================= BUTTON ================= */
+.btn-primary {
+    background: #5eb5ee;
+    border: none;
+    border-radius: 20px;
+}
+
+.btn-primary:hover {
+    background: #4aa5db;
+}
+
+/* ================= TABLE ================= */
+.table {
+    font-size: 14px;
+}
+
+.table thead th {
+    background: linear-gradient(135deg, #5eb5ee, #b8e1ff) !important;
+    color: #00324d;
+    font-weight: 600;
+    border: none;
+}
+
+/* ================= RESPONSIVE ================= */
+
+/* IPAD */
+@media (max-width: 991px) {
+    .main-content {
+        margin-left: 0;
+        padding: 25px;
+    }
+
+    .sidebar {
+        position: relative;
+        width: 100%;
+        height: auto;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .table {
+        font-size: 13px;
+    }
+}
+
+/* HP */
+@media (max-width: 576px) {
+    body {
+        font-size: 13px;
+    }
+
+    .main-content {
+        padding: 15px;
+    }
+
+    .card-stat h2 {
+        font-size: 22px;
+    }
+
+    .table {
+        font-size: 12px;
+    }
+
+    th, td {
+        padding: 6px !important;
+        white-space: nowrap;
+    }
+
+    .table-responsive {
+        overflow-x: auto;
+    }
+
+    .btn {
+        font-size: 12px;
+        padding: 6px 10px;
+    }
+}
