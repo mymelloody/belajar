@@ -1,0 +1,90 @@
+html {
+    scroll-behavior: smooth;         /* agar perpindahan halus */
+    scroll-padding-top: 50px;        /* sesuaikan tinggi navbar */
+}
+
+.cst-banner{
+    background-image: url(gambar/sky.jpg);
+    height: 43vh;
+    background-size: cover;
+    background-position: center;
+}
+
+.cst-color{
+    background-color: rgb(241, 232, 178);
+}
+
+.cst-stroke{
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: rgb(241, 232, 178);
+    color: white;
+}
+
+.cst-justify{
+    text-align: justify;
+}
+
+.cst-font{
+    font-family: verdana  ; 
+    font-size: medium;
+}
+
+.cst-serif{
+    font-family: serif;
+}
+
+.cst-bg-color{
+    background-color: rgba(241, 232, 178, 0.641);;
+}
+
+.card {
+    height: 100%;
+}
+
+.card-img-top {
+    height: 200px;
+    object-fit: cover;
+    transition: transform 0.4s ease, filter 0.4s ease;
+    -webkit-transition: transform 0.4s ease, filter 0.4s ease;
+    -moz-transition: transform 0.4s ease, filter 0.4s ease;
+    -ms-transition: transform 0.4s ease, filter 0.4s ease;
+    -o-transition: transform 0.4s ease, filter 0.4s ease;
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card:hover .card-img-top {
+    transform: scale(1.08);
+    filter: brightness(85%);
+    -webkit-transform: scale(1.08);
+    -moz-transform: scale(1.08);
+    -ms-transform: scale(1.08);
+    -o-transform: scale(1.08);
+}
+
+.profile-img {
+    width: 55px;
+    height: 55px;
+    object-fit: cover;
+}
+
+.list-group-item {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    background-color: #fff;
+    transition: transform 0.2s ease;
+}
+
+.list-group-item:hover {
+    transform: scale(1.02);
+    }
+
+
+.cst-font-size{
+    font-size: small;
+}
